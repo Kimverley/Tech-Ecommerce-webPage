@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eccomerce Audio Product page - array of objects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Audio Store</div>
+      <button class="cart-btn" onclick="toggleCart()">
+        Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+
+    <div class="hero">
+      <h1>Premium Audio Products</h1>
+      <p>Quality sound for everyone</p>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-content">
+        <div class="cart-header">Your Cart</div>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">$0</span>
+        </div>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
